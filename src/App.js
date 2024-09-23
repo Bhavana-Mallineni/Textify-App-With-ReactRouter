@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import About from './components/About';
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import Alert from './components/Alert';
 import {
   BrowserRouter as Router,
@@ -14,13 +14,19 @@ import {
 export default function App() {
   const [mode, setmode] = useState('light');
   const [alert, setAlert] = useState(null);
+  const timeoutRef = useRef(null);
 
   const showAlert = (message, type) => {
     setAlert({
       msg: message,
       type: type,
-    })
-    setTimeout(()=> {
+    });
+
+    if(timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+
+    timeoutRef.current = setTimeout(()=> {
       setAlert(null);
     }, 2000)
   }
