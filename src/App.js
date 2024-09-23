@@ -14,7 +14,7 @@ import {
 export default function App() {
   const [mode, setmode] = useState('light');
   const [alert, setAlert] = useState(null);
-  const timeoutRef = useRef(null);
+  let alertTimeout = null;
 
   const showAlert = (message, type) => {
     setAlert({
@@ -22,11 +22,11 @@ export default function App() {
       type: type,
     });
 
-    if(timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
+    if(alertTimeout) {
+      clearTimeout(alertTimeout);
     }
 
-    timeoutRef.current = setTimeout(()=> {
+    alertTimeout = setTimeout(()=> {
       setAlert(null);
     }, 2000)
   }
@@ -48,11 +48,11 @@ export default function App() {
     <>
     <Router>
       <Navbar title="Textify" mode={mode} toggleMode={toggleMode}/>
-      <Alert alert={alert} />
+      <Alert alert={alert} setAlert={setAlert}/>
       <div className="container my-3">
 
           <Routes>
-            <Route exact path="/about" element={<About mode={mode}/>} />
+            <Route exact path="/about" element={<About mode={mode}  />} />
             <Route exact path="/" element={<TextForm heading="Enter the text to analyze" mode={mode} showAlert={showAlert} />} />
           </Routes>
 
