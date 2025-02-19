@@ -1,72 +1,96 @@
-# Textify-App-With-ReactRouter
-# Getting Started with Create React App
+# Textify - Text Analyzer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Textify** is a simple and efficient text analysis tool built with React. It provides various text manipulation features like converting text to uppercase/lowercase, counting words and characters, finding and replacing words, removing extra spaces, and even text-to-speech functionality.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌐 Live Demo
+[**Textify App**](https://textify-app-with-reactrouter.onrender.com)- Try it out!
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔤 **Convert to Uppercase & Lowercase**
+- 🔁 **Reverse Text**
+- 📋 **Copy to Clipboard**
+- 🔊 **Text-to-Speech**
+- 🕵️‍♂️ **Find and Replace Words**
+- ✂️ **Remove Extra Spaces**
+- 📝 **Text Summary (Word count, Character count, Reading time, etc.)**
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📷 Screenshots
 
-### `npm run build`
+![Textify UI](./textify_screenshot.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend:** React, Bootstrap
+- **Deployment:** Render
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🏗 Installation & Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🔹 Clone the Repository
+```bash
+git clone https://github.com/Bhavana-Mallineni/Textify-App.git
+cd Textify-App
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🔹 Install Dependencies
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🔹 Run the App Locally
+```bash
+npm start
+```
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚀 Deployment
 
-### Code Splitting
+The app is deployed on **Render**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### **Render Build Settings:**
+- **Build Command:** `npm run build`
+- **Start Command:** `npm start`
 
-### Analyzing the Bundle Size
+To deploy:
+1. Push the latest code to GitHub.
+2. Connect the repo with Render.
+3. Set the correct **Build Command** and **Start Command**.
+4. Deploy & Enjoy! 🎉
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 💡 Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Enter text into the text box.
+2. Click on the available buttons to perform various actions.
+3. View text statistics like word count, character count, vowel/consonant count, etc.
+4. Use **Find & Replace** to modify text easily.
+5. Copy text or use **Text-to-Speech** for listening.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🤝 Contributing
+Feel free to contribute by **forking** the repo, making changes, and submitting a **pull request**.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📜 License
+This project is licensed under the **MIT License**.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 408126a (Initialize project using Create React App)
+### ⭐ If you like this project, don't forget to **star** the repository! ⭐
+
